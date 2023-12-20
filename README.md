@@ -118,18 +118,18 @@ The project workflow encompasses several stages, from data preparation to featur
 9. **Compilation of Results**:
    - Model details such as tuned hyperparameters and performance metrics and the models themselves are stored into a dataframe, which is then sorted based on mean squared error to facilitate model selection.
 
-10.**Model Selection**:
+10. **Model Selection**:
    - The dataframe row with the lowest mean squared error is selected and saved as a Pickle file for use later in training the final model.
 
 ### Model Finalization
 
-11.**Final Model Training**:
+11. **Final Model Training**:
    - The final model pipeline is created using the saved model as a template. Training is done using the combined training and validation datasets and evaluated on the test set to verify generalization and performance.
 
-12.**Final Model Evaluation**:
+12. **Final Model Evaluation**:
    - The final model is then evaluated using the test dataset to verify performance and generalization.
 
-13.**Model Serialization**:
+13. **Model Serialization**:
    - It is serialized and saved in the `model` directory, ready for deployment in a production environment.
 
 # Replicating This Project
@@ -275,7 +275,7 @@ Ensure that you have Python, pip, Git and Docker installed on your system and th
      kind load docker-image ccpp:v001
      ```
 
-10.**Create a Deployment**:
+10. **Create a Deployment**:
    - In the capstone project directory, create a deployment:
      ```
      kubectl apply -f deployment.yaml
@@ -286,7 +286,7 @@ Ensure that you have Python, pip, Git and Docker installed on your system and th
      kubectl get pod
      ```
 
-11.**Create a Service**:
+11. **Create a Service**:
    - In the capstone project directory, create a service:
      ```
      kubectl apply -f service.yaml
@@ -300,7 +300,7 @@ Ensure that you have Python, pip, Git and Docker installed on your system and th
      kubectl port-forward service/ccpp 8080:80
      ```
 
-12.**Kubernetes Testing**:
+12. **Kubernetes Testing**:
    - Open another terminal and navigate to the capstone project directory:
      ```
      cd projects/mlzoomcamp_capstone_1
