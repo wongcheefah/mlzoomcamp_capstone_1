@@ -276,43 +276,43 @@ Ensure that you have Python, pip, Git and Docker installed on your system and th
      ```
 
 10. **Create a Deployment**:
-   - In the capstone project directory, create a deployment:
-     ```
-     kubectl apply -f deployment.yaml
-     ```
-   - Verify creation of ccpp deployment:
-     ```
-     kubectl get deployment
-     kubectl get pod
-     ```
+    - In the capstone project directory, create a deployment:
+      ```
+      kubectl apply -f deployment.yaml
+      ```
+    - Verify creation of ccpp deployment:
+      ```
+      kubectl get deployment
+      kubectl get pod
+      ```
 
 11. **Create a Service**:
-   - In the capstone project directory, create a service:
-     ```
-     kubectl apply -f service.yaml
-     ```
-   - Verify creation of ccpp service:
-     ```
-     kubectl get service ccpp
-     ```
-   - Configure port-forwarding for the service:
-     ```
-     kubectl port-forward service/ccpp 8080:80
-     ```
+    - In the capstone project directory, create a service:
+      ```
+      kubectl apply -f service.yaml
+      ```
+    - Verify creation of ccpp service:
+      ```
+      kubectl get service ccpp
+      ```
+    - Configure port-forwarding for the service:
+      ```
+      kubectl port-forward service/ccpp 8080:80
+      ```
 
 12. **Kubernetes Testing**:
-   - Open another terminal and navigate to the capstone project directory:
-     ```
-     cd projects/mlzoomcamp_capstone_1
-     ```
-   - Activate the virtual environment:
-     ```
-     pipenv shell
-     ```
-   - Run the direct prediction script:
-     ```
-     python3 predict_test_kube.py
-     ```
+    - Open another terminal and navigate to the capstone project directory:
+      ```
+      cd projects/mlzoomcamp_capstone_1
+      ```
+    - Activate the virtual environment:
+      ```
+      pipenv shell
+      ```
+    - Run the direct prediction script:
+      ```
+      python3 predict_test_kube.py
+      ```
 
 The test script will send a prediction request to the service running in the Docker container in the deployment in the Kubernetes cluster. The output will display the details of the request, the prediction response, and a comparison with the actual value.
 
