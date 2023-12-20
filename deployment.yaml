@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ccpp
+spec:
+  selector:
+    matchLabels:
+      app: ccpp
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ccpp
+    spec:
+      containers:
+      - name: ccpp
+        image: ccpp:v001
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "0.25"            
+          limits:
+            memory: "512Mi"
+            cpu: "0.5"
+        ports:
+        - containerPort: 9696
