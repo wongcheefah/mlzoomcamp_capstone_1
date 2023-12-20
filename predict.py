@@ -14,7 +14,7 @@ def predict():
     test_df = pd.DataFrame([test_case])
     y_pred = model.predict(test_df)
 
-    result = {"PE": float(y_pred)}
+    result = {"PE": float(y_pred[0])}
 
     return jsonify(result)
 
