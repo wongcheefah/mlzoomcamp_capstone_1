@@ -119,18 +119,18 @@ The project workflow encompasses several stages, from data preparation to featur
    - Model details such as tuned hyperparameters and performance metrics and the models themselves are stored into a dataframe, which is then sorted based on mean squared error to facilitate model selection.
 
 10. **Model Selection**:
-   - The dataframe row with the lowest mean squared error is selected and saved as a Pickle file for use later in training the final model.
+    - The dataframe row with the lowest mean squared error is selected and saved as a Pickle file for use later in training the final model.
 
 ### Model Finalization
 
 11. **Final Model Training**:
-   - The final model pipeline is created using the saved model as a template. Training is done using the combined training and validation datasets and evaluated on the test set to verify generalization and performance.
+    - The final model pipeline is created using the saved model as a template. Training is done using the combined training and validation datasets and evaluated on the test set to verify generalization and performance.
 
 12. **Final Model Evaluation**:
-   - The final model is then evaluated using the test dataset to verify performance and generalization.
+    - The final model is then evaluated using the test dataset to verify performance and generalization.
 
 13. **Model Serialization**:
-   - It is serialized and saved in the `model` directory, ready for deployment in a production environment.
+    - It is serialized and saved in the `model` directory, ready for deployment in a production environment.
 
 # Replicating This Project
 
