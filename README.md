@@ -134,7 +134,7 @@ The project workflow encompasses several stages, from data preparation to featur
 
 # Replicating This Project
 
-The instructions given here are specific to Ubuntu on WSL, the environment the project is done in. To replicate this project and the environment, follow the instructions below. These steps will guide you through the process of setting up the environment, cloning the repository, and running the model training and prediction service. If you are running a different OS or platform, you may need to refer to online resources for instructions specific to your setup. _A [video](https://youtu.be/RqFJBDcS-v0) of the steps below is available on my YouTube channel._
+The instructions given here are specific to Ubuntu on WSL, the environment the project is done in. To replicate this project and the environment, follow the instructions below. These steps will guide you through the process of setting up the environment, cloning the repository, and running the model training and prediction service. If you are running a different OS or platform, you may need to refer to online resources for instructions specific to your setup. _A [video](https://youtu.be/FNp5JSTf1U0) of the steps below is available on my YouTube channel._
 
 ### System Prerequisites
 
