@@ -15,7 +15,7 @@ The dataset contains 9568 data points collected from a Combined Cycle Power Plan
 # Project Structure and Files Description
 
 This project is organized into a set of folders and files to facilitate the full machine learning workflow, from data analysis to model deployment. Below is the folder structure and description of each element in this repository:
-
+```
 .
 ├── Dockerfile
 ├── Pipfile
@@ -37,6 +37,7 @@ This project is organized into a set of folders and files to facilitate the full
 ├── test_data
 │   └── test_data.csv
 └── train.py
+```
 
 ### Folders and Files
 
